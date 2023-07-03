@@ -27,6 +27,11 @@ p {
   padding: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .link {
   text-decoration: none;
 }
@@ -69,7 +74,8 @@ p {
 }
 
 .container {
-  width: 1158px;
+  width: 100%;
+  max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -152,7 +158,8 @@ p {
 }
 
 .hero-title {
-  padding: 0 316px;
+  max-width: 496px;
+  margin: 0 auto;
   color: var(--white-color);
   text-align: center;
   font-weight: 700;
@@ -202,36 +209,81 @@ p {
   margin-bottom: 8px;
 }
 
+/*-------------- ACTIVITY ---------------*/
+
+.activity {
+  padding-bottom: 120px;
+}
+
+.activity-title {
+  margin-bottom: 72px;
+}
+
+.activity-list {
+  display: flex;
+  gap: 24px;
+}
+
 /*-------------- TEAM ---------------*/
 
 .team {
   background-color: var(--cloud-color);
+  padding: 120px 0;
+}
+
+.team-title {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
   background-color: var(--white-color);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 32px;
 }
 
 .card-name {
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 8px;
 }
 
 .job-title {
   color: var(--slate-color);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 
 /*-------------- PORTFOLIO ---------------*/
 
+.developments {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-menu {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
 .filter-button {
-  font-family: 'Roboto', sans-serif;
+  padding: 12px 24px;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--iris-color);
   background-color: var(--cloud-color);
+  border: 1px solid var(--cornflower);
+  border-radius: 4px;
 }
 
 .filter-button:hover,
@@ -241,7 +293,19 @@ p {
   cursor: pointer;
 }
 
+.developments-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+/* .developments-item {
+  padding-bottom: 32px;
+  outline: 1px solid var(--cornflower);
+} */
+
 .development-title {
+  margin-bottom: 8px;
   color: var(--navy-blue);
   font-size: 20px;
   font-weight: 500;
@@ -253,9 +317,17 @@ p {
   color: var(--slate-color);
 }
 
+.text-content-box {
+  padding: 32px 16px;
+  border-bottom: 1px solid var(--cornflower);
+  border-left: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+}
+
 /*-------------- FOOTER ---------------*/
 
 .page-footer {
+  padding: 102px 0 100px 0;
   background-color: var(--navy-blue);
 }
 
@@ -264,5 +336,7 @@ p {
 }
 
 .call-text {
+  max-width: 264px;
   color: var(--cloud-color);
+  margin-top: 18px;
 }
