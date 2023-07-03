@@ -83,7 +83,7 @@ img {
 /*-------------- HEADER ---------------*/
 
 .header {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   border-bottom: 1px solid var(--cornflower);
 }
 
@@ -94,15 +94,17 @@ img {
 
 .header-navigation {
   display: flex;
+  align-items: center;
 }
 
 .header-menu {
   display: flex;
-  margin-left: 76px;
   gap: 40px;
 }
 
 .header-menu-link {
+  display: block;
+  padding: 24px 0;
   color: var(--navy-blue);
   font-weight: 500;
   font-size: 16px;
@@ -118,6 +120,10 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--iris-color);
+}
+
+.header-logo {
+  margin-right: 76px;
 }
 
 .logo-studio {
@@ -136,9 +142,12 @@ img {
 .header-adress-list {
   display: flex;
   gap: 40px;
+  align-items: center;
 }
 
 .header-adress-link {
+  display: block;
+  padding: 24px 0;
   color: var(--slate-color);
   font-size: 16px;
   line-height: 1.5;
@@ -172,6 +181,7 @@ img {
   display: block;
   margin: 48px auto 0;
   padding: 16px 32px;
+  min-width: 169px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -243,13 +253,15 @@ img {
 .team-item {
   background-color: var(--white-color);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: 32px;
 }
 
 .card-name {
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 8px;
+}
+
+.card-name-container {
+  padding: 32px 16px;
 }
 
 .job-title {
@@ -291,6 +303,7 @@ img {
   background-color: var(--ocean-color);
   color: var(--white-color);
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .developments-list {
@@ -298,11 +311,6 @@ img {
   flex-wrap: wrap;
   gap: 48px 24px;
 }
-
-/* .developments-item {
-  padding-bottom: 32px;
-  outline: 1px solid var(--cornflower);
-} */
 
 .development-title {
   margin-bottom: 8px;
@@ -327,8 +335,13 @@ img {
 /*-------------- FOOTER ---------------*/
 
 .page-footer {
-  padding: 102px 0 100px 0;
+  padding: 100px 0;
   background-color: var(--navy-blue);
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 18px;
 }
 
 .page-footer .logo-studio {
@@ -338,5 +351,4 @@ img {
 .call-text {
   max-width: 264px;
   color: var(--cloud-color);
-  margin-top: 18px;
 }
