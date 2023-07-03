@@ -13,6 +13,18 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: var(--white-color);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }
 
 .link {
@@ -21,9 +33,70 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-list .nav-link {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.subtitle {
+  color: var(--navy-blue);
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: var(--navy-blue);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/*-------------- HEADER ---------------*/
+
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid var(--cornflower);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-navigation {
+  display: flex;
+}
+
+.header-menu {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.header-menu-link {
   color: var(--navy-blue);
   font-weight: 500;
   font-size: 16px;
@@ -45,42 +118,54 @@ body {
   color: var(--navy-blue);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.header-menu-link:hover,
+.header-menu-link:focus {
   color: var(--ocean-color);
 }
 
-.contacts {
+.header-adress {
   font-style: normal;
 }
 
-.contacts-list .contact-link {
+.header-adress-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-adress-link {
   color: var(--slate-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
 
-.contact-link:hover,
-.contact-link:focus {
+.header-adress-link:hover,
+.header-adress-link:focus {
   color: var(--ocean-color);
 }
 
-.title-container {
+/*-------------- HERO ---------------*/
+
+.hero {
+  padding: 188px 0;
   background-color: var(--navy-blue);
 }
 
-.title-container .page-title {
+.hero-title {
+  padding: 0 316px;
   color: var(--white-color);
   text-align: center;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 1.12px;
+  letter-spacing: 0.02em;
 }
 
-.title-container .order-button {
-  font-family: 'Roboto', sans-serif;
+.hero-btn {
+  display: block;
+  margin: 48px auto 0;
+  padding: 16px 32px;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -88,42 +173,37 @@ body {
   background-color: var(--iris-color);
   color: var(--white-color);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
-.order-button:hover,
-.order-button:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: var(--ocean-color);
 }
 
-.similar-title {
-  color: var(--navy-blue);
-  font-size: 20px;
-  line-height: 1.2;
-  font-weight: 500;
-  letter-spacing: 0.4px;
+/*-------------- FEATURES ---------------*/
+
+.features {
+  padding: 120px 0;
 }
 
-.feature-text {
-  color: var(--slate-color);
-  line-height: 1.5;
-  letter-spacing: 0.32px;
+.features-list {
+  display: flex;
+  gap: 24px;
 }
 
-.section-title {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.72px;
-  text-transform: capitalize;
-  font-weight: 700;
-  color: var(--navy-blue);
+.features-item {
+  width: calc(100%-72px)/4;
 }
 
-.team-container {
+/*-------------- TEAM ---------------*/
+
+.team {
   background-color: var(--cloud-color);
 }
 
-.member-card {
+.team-item {
   background-color: var(--white-color);
 }
 
@@ -137,7 +217,9 @@ body {
   letter-spacing: 0.02em;
 }
 
-.filter-list .filter-button {
+/*-------------- PORTFOLIO ---------------*/
+
+.filter-button {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -162,12 +244,11 @@ body {
   letter-spacing: 0.02em;
 }
 
-.developments-list .developments-description {
+.developments-description {
   color: var(--slate-color);
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
 }
+
+/*-------------- FOOTER ---------------*/
 
 .page-footer {
   background-color: var(--navy-blue);
@@ -179,6 +260,4 @@ body {
 
 .call-text {
   color: var(--cloud-color);
-  letter-spacing: 0.02em;
-  line-height: 1.5;
 }
