@@ -191,10 +191,15 @@ p {
 .features-list {
   display: flex;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
-.features-item {
-  width: calc(100%-72px)/4;
+.feature-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.feature-title {
+  margin-bottom: 8px;
 }
 
 /*-------------- TEAM ---------------*/
